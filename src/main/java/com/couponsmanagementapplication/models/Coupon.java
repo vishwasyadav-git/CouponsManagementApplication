@@ -19,5 +19,6 @@ public class Coupon {
 
     private String type; // cart-wise, product-wise, bxgy
     private String details; // JSON string for flexibility in storing conditions
+    private  String expiryDate;
 }
 
