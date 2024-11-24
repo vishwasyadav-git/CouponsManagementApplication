@@ -13,18 +13,22 @@ public class CouponService {
     private final CouponRepository couponRepository;
 
     public CouponService(CouponRepository couponRepository) {
+
         this.couponRepository = couponRepository;
     }
 
     public Coupon createCoupon(Coupon coupon) {
+
         return couponRepository.save(coupon);
     }
 
     public List<Coupon> getAllCoupons() {
+
         return couponRepository.findAll();
     }
 
     public Optional<Coupon> getCouponById(Long id) {
+
         return couponRepository.findById(id);
     }
 
@@ -37,6 +41,7 @@ public class CouponService {
     }
 
     public void deleteCoupon(Long id) {
+
         couponRepository.deleteById(id);
     }
 }
